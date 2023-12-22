@@ -12,7 +12,9 @@ app.use(bodyParser.json());
 bodyParser.json();
 
 app.use('/destinations',destinationRoutes);
-
+app.get("/",(req,res) =>{
+  res.send("Welcome to Assignment-14- Travelite APIs")
+})
 mongoose
   .connect(dbURI, {
     useNewUrlParser: true,

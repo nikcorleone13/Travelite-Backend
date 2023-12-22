@@ -1,5 +1,4 @@
 const express = require("express");
-const dbMethods = require("../dbMethods/dbMethods");
 const controller = require("../controllers/controllers");
 const router = express.Router();
 
